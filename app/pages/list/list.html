@@ -1,0 +1,9 @@
+<GridLayout>
+    <ListView [items]="funcLista" class="small-spacing">
+        <ng-template let-item="item">
+        <GridLayout (tap)="listarIntegrantes(item.name)"> 
+            <Label [text]="item.name" class="medium-spacing"></Label>
+        </GridLayout>
+      </ng-template>
+    </ListView>
+</GridLayout>
